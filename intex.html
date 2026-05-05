@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 2nd Anniversary ♥️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --pastel-pink: #ffe4e1;
+            --deep-pink: #ff85a2;
+            --text-color: #5d5d5d;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--pastel-pink);
+            color: var(--text-color);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Landing Screen --- */
+        #landing-screen {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--pastel-pink);
+            z-index: 100;
+            transition: opacity 1s ease;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .cover-pic {
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            border: 8px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+        }
+
+        .gift-container {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gift-container:hover {
+            transform: scale(1.1);
+        }
+
+        .gift-box {
+            font-size: 50px;
+            color: var(--deep-pink);
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        .enter-btn {
+            background-color: var(--deep-pink);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 133, 162, 0.4);
+            font-weight: bold;
+        }
+
+        /* --- Main Content --- */
+        #main-content {
+            display: none;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        section {
+            margin-bottom: 100px;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 30px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            animation: fadeIn 2s ease;
+        }
+
+        h1, h2 { color: #d63384; font-family: 'Georgia', serif; }
+
+        .memory-img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* --- Hearts Everywhere --- */
+        .heart {
+            position: fixed;
+            color: var(--deep-pink);
+            font-size: 15px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 999;
+            animation: floatUp linear forwards;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(110vh) translateX(0); opacity: 1; }
+            100% { transform: translateY(-10vh) translateX(50px); opacity: 0; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-text {
+            line-height: 1.8;
+            font-size: 1.15rem;
+            white-space: pre-line;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        /* YouTube Audio Hack (Invisible) */
+        #player { display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="player"></div>
+
+    <div id="landing-screen">
+        <img src="https://i.ibb.co/yFkxrXXs/image-0.jpg" alt="Us" class="cover-pic">
+        <div class="gift-container" onclick="startExperience()">
+            <div class="gift-box"><i class="fas fa-gift"></i></div>
+            <button class="enter-btn">click here idiot ♥️</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        
+        <section>
+            <h1>Happy 2nd Anniversary Mutheee 😚</h1>
+            <p class="message-text">
+                Happy 2nd love anniversary mutheee 😚😚 This day feels so special nd exciting as we celebrate 🥂 our 2nd year of love which was filled with lots of laugh tease fights care nd love💓 I hope ur smiling nicely while reading this ✨🌼 cuz ur smile is the most precious thing to me🫴🏻💎
+
+                I still remember when
+                We first saw each other in our school uniforms…
+                From strangers, to friends at first sight, to best friends—
+                and now, to something even more special. 💗
+
+                I never imagined that i would love someone this much tht i cannot start or end a day without you in my thoughts 💭 👀
+
+                From me rejecting your proposal, to you accepting mine years later on this very day—
+                our story has been beautifully unexpected.
+            </p>
+            <img src="https://i.ibb.co/j9tbRg2B/image-1.jpg" class="memory-img">
+        </section>
+
+        <section>
+            <h2>Our Memories 📸</h2>
+            <p class="message-text">
+                Ukn one of my favvvvvvv mostly number one memory or moment with you is us getting soaked in the rain together during our PU days 🌧️
+                
+                I remember being scared thinking I might fall, but with you by my side, hand in hand, all that fear just disappeared. 
+                Dancing with you in the rain— that moment will always stay in my heart.
+            </p>
+            <img src="https://i.ibb.co/vCbnqD1n/image-2.jpg" class="memory-img">
+            <p class="message-text">
+                And that secret kiss when our friends were around… it gave me the sweetest butterflies. 😝
+                The way you worry about me whenever we go out… (ummmah 😘)
+                the way you remember the little things—like how much I love momos, and getting them for my birthday— it all means so much to me.
+            </p>
+        </section>
+
+        <section>
+            <h2>Final Message 💌</h2>
+            <p class="message-text">
+                You’ve never, not even as a joke, made me feel like I’m a problem.
+                From the smallest gestures to the biggest things, everything you do matters to me.
+                You’re just so, so special… You editing videos fr me 🫠✨ your every small actions if love means a lot to me ❤️
+
+                From the moment you walked into my life, everything became better,a better that no one else except u could do . You are sunshine of my dark days....your happiness of my life.....your chicken of my chicken biryani baby 😘 😘
+                
+                This is just a tiny place on the internet, but it holds some of my biggest feelings for you 💗
+
+                I don’t need perfect moments, I just need you.
+                And I’d choose you again… every single time.
+            </p>
+            <img src="https://i.ibb.co/MDR0dWcM/image-3.jpg" class="memory-img">
+            <h3>I love you😘❤️</h3>
+        </section>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'K9MLQ34-Vfs',
+                playerVars: { 'autoplay': 0, 'loop': 1, 'playlist': 'K9MLQ34-Vfs' },
+                events: { 'onReady': onPlayerReady }
+            });
+        }
+        function onPlayerReady(event) {
+            // Ready to play when clicked
+        }
+
+        function startExperience() {
+            // Play Music
+            if(player) player.playVideo();
+
+            // Hide Landing, Show Content
+            document.getElementById('landing-screen').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('landing-screen').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            }, 1000);
+
+            // Start Floating Hearts
+            setInterval(createHeart, 200);
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            heart.style.fontSize = (Math.random() * 15 + 10) + 'px';
+            document.body.appendChild(heart);
+
+            setTimeout(() => { heart.remove(); }, 5000);
+        }
+        
+        // Initial heart flow on landing screen too
+        setInterval(createHeart, 400);
+    </script>
+</body>
+</html>
